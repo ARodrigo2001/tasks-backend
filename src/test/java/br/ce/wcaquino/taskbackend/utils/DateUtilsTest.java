@@ -10,7 +10,7 @@ public class DateUtilsTest {
 	@Test
 	public void returnTrueForFutureDates() {
 		LocalDate date = LocalDate.of(2040, 01, 01);
-		Assert.assertFalse(DateUtils.isEqualOrFutureDate(date)); // Forcing fail to test unit test report on jenkins ui
+		Assert.assertTrue(DateUtils.isEqualOrFutureDate(date)); // Forcing false to
 	}
 	
 	@Test
